@@ -1,0 +1,434 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.5;
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+    background-color: #e0e0e0; 
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.button_1 {
+    height: 38px;
+    background: #3498db; 
+    border: none;
+    padding: 0 20px;
+    color: white;
+}
+
+/* header */
+header {
+    background: #34495e; 
+    color: white;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #e74c3c solid 3px; 
+}
+
+header a {
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header li {
+    float: left;
+    display: inline;
+    padding: 0 20px;
+}
+
+header #branding {
+    float: left;
+}
+
+header #branding h1 {
+    margin: 0;
+}
+
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+
+header .highlight,
+header .current a {
+    color: #e67e22; 
+    font-weight: bold;
+}
+
+header a:hover {
+    color: #ecf0f1; 
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+#showcase {
+    min-height: 400px;
+    text-align: center;
+    color: white;
+    background: url('./images/showcase.jpg') no-repeat 0 -400px;
+}
+
+#showcase h1 {
+    margin-top: 100px;
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+#showcase p {
+    font-size: 20px;
+}
+
+/* newsletter */
+#newsletter {
+    padding: 25px;
+    color: #ffffff;
+    background: #34495e; 
+}
+
+#newsletter h1 {
+    float: left;
+}
+
+#newsletter form {
+    float: right;
+    margin-top: 15px;
+}
+
+#newsletter input[type="email"] {
+    padding: 4px;
+    height: 25px;
+    width: 250px;
+}
+
+/* boxes */
+#boxes {
+    margin-top: 60px;
+}
+
+#boxes .box {
+    float: left;
+    text-align: center;
+    width: 30%;
+    padding: 15px;
+}
+
+#boxes .box img {
+    width: 100px;
+}
+.box {
+    width: 30%;
+    padding: 20px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    transition: transform 0.3s;
+}
+
+.box:hover {
+    transform: scale(0.75);
+}
+
+.box img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* footer */
+footer {
+    padding: 20px;
+    margin-top: 20px;
+    color: white;
+    background: #e74c3c; 
+    text-align: center;
+}
+
+/* media queries */
+@media (max-width: 768px) {
+    header #branding,
+    header nav,
+    header nav li,
+    #newsletter h1,
+    #newsletter form,
+    #boxes .box,
+    article#main-col,
+    aside#sidebar {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+
+    header {
+        padding-bottom: 20px;
+    }
+
+    #showcase h1 {
+        margin-top: 40px;
+    }
+
+    #newsletter button,
+    .quote button {
+        display: block;
+        width: 100%;
+    }
+
+    #newsletter form input[type="email"],
+    .quote input,
+    .quote textarea {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+}
+
+/* Hakkımda */
+#about {
+    padding: 40px 0; 
+}
+
+#main-col {
+    width: 100%; 
+}
+
+.sidebar {
+    float: right;
+    width: 30%; 
+}
+
+.dark {
+    background-color: #286791;
+    color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+#main-col p,
+.dark p {
+    line-height: 1.6; 
+}
+
+#main-col h1,
+.dark h3 {
+    color: #333; 
+}
+
+.profile-box {
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 20px; 
+    background-color: #f9f9f9; 
+    border-radius: 8px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+.profile-image {
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-box {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-box.dark {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Blog */
+.blog-post-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px; 
+}
+
+.blog-post-card h2 {
+    color: #333;
+    margin-bottom: 10px; 
+}
+
+.post-info {
+    color: #777;
+}
+
+.read-more {
+    color: #3498db;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+    transition: color 0.3s;
+}
+
+.read-more:hover {
+    color: #2c3e50;
+}
+
+.post-thumbnail {
+    max-width: 100%;
+    height: 250px;
+    border-radius: 8px;
+    margin: 0 auto; 
+    display: block; 
+}
+
+/* Hizmetler */
+.container1 {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh;
+}
+  
+ul#services li {
+    list-style: none;
+    padding: 20px;
+    border: #cccccc solid 1px;
+    margin-bottom: 10px;
+    background: #ecf0f1; 
+}
+
+.rounded-services {
+    list-style: none;
+    padding: 0;
+}
+
+.service-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+  
+.service-item {
+    border-radius: 10px;
+    width: 100%; 
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column; 
+}
+  
+.service-info {
+    flex: 1;
+    padding: 20px;
+    text-align: left;
+}
+  
+.service-item img {
+    border-radius: 50%;
+    max-width: 100%; 
+    margin-bottom: 10px;
+}
+  
+.service-item h3 {
+    margin-bottom: 10px;
+}
+  
+.service-item p {
+    margin: 0;
+}
+
+.rounded-services li {
+    border-radius: 50px; 
+    margin-bottom: 20px;
+    padding: 20px;
+}
+  
+.rounded-services h3 {
+    margin-bottom: 10px;
+}
+  
+.rounded-services p {
+    margin: 0;
+}
+
+/* kenar cubugu */
+aside#sidebar {
+    float: right;
+    width: 30%;
+    margin-top: 10px;
+}
+
+aside#sidebar .quote input,
+aside#sidebar .quote textarea {
+    width: 90%;
+    padding: 5px;
+}
+
+article#main-col {
+    float: left;
+    width: 65%;
+}
+
+/* Iletisim */
+.contact-form {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+#contact-and-map { /* mapi yana alıyoruz */
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.contact-form,
+.map {
+    width: calc(50% - 10px); 
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.map {
+    margin-left: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .contact-form,
+    .map {
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 20px; 
+    }
+}
+
+.contact-form input,
+.contact-form textarea {
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    padding: 8px;
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.contact-form input[type="submit"] {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.contact-form input[type="submit"]:hover {
+    background-color: #45a049;
+}

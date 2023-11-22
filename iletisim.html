@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>HilalCakmak - Iletisim</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="web design, web template, web structure">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1><span class="highlight">Hilal</span> Çakmak</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Ana Sayfa</a></li>
+                    <li><a href="hakkimda.html">Hakkımda</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="hizmetler.html">Hizmetler</a></li>
+                    <li class="current"><a href="iletisim.html">İletişim</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <section id="contact-and-map">
+            <div class="contact-form">
+                <h2>İletişim</h2>
+                <form action="submit_form.php" method="post">
+                    <label for="name">Adınız:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">E-posta Adresiniz:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Mesajınız:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+
+                    <input type="submit" value="Gönder">
+                </form>
+            </div>
+
+            <div class="map">
+                <!-- Embedding Google Maps -->
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d312012.11773678356!2d35.80859362696845!3d38.96374575436584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14eab65d98302a61%3A0x7d45a8e599432949!2zNTQwMCBWZXJpb3VzIENpbmVtYSBDaXR5LCBCZXJsaW5lLCBLb3JlY29nbmE!5e0!3m2!1sen!2sus!4v1642705722822!5m2!1sen!2sus"
+                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>Hilal Cakmak, Copyright &copy; 2023</p>
+    </footer>
+
+</body>
+
+</html>
