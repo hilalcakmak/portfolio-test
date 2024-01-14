@@ -7,6 +7,84 @@ body {
     background-color: #e0e0e0; 
 }
 
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+}
+
+/* çark */
+
+#spinWheelContainer {
+    position: relative;
+    text-align: center;
+}
+
+#spinWheel {
+    width: 200px;
+    height: 200px;
+    background: conic-gradient(
+        #ffcc00 0deg 60deg,
+        #ff6666 60deg 120deg,
+        #99cc00 120deg 180deg,
+        #ff9933 180deg 240deg,
+        #cc66ff 240deg 300deg,
+        #66ccff 300deg 360deg
+    );
+    border-radius: 50%;
+    position: relative;
+    margin: 20px auto;
+    transition: transform 3s ease-out;
+}
+
+.wheel-section {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(50% 50%, 0 0, 100% 0);
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
 .container {
     width: 80%;
     margin: auto;
@@ -15,7 +93,7 @@ body {
 
 .button_1 {
     height: 38px;
-    background: #3498db; 
+    background: #f5cac5; 
     border: none;
     padding: 0 20px;
     color: white;
@@ -23,11 +101,11 @@ body {
 
 /* header */
 header {
-    background: #34495e; 
+    background: #c4bdf5; 
     color: white;
     padding-top: 30px;
     min-height: 70px;
-    border-bottom: #e74c3c solid 3px; 
+    border-bottom: #f5cac5 solid 3px; 
 }
 
 header a {
@@ -58,7 +136,7 @@ header nav {
 
 header .highlight,
 header .current a {
-    color: #e67e22; 
+    color: #f5cac5; 
     font-weight: bold;
 }
 
@@ -89,7 +167,7 @@ header a:hover {
 #newsletter {
     padding: 25px;
     color: #ffffff;
-    background: #34495e; 
+    background: #c4bdf5; 
 }
 
 #newsletter h1 {
@@ -145,8 +223,26 @@ footer {
     padding: 20px;
     margin-top: 20px;
     color: white;
-    background: #e74c3c; 
+    background: #f5cac5; 
     text-align: center;
+}
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-icons img {
+    width: 30px; /* İkona uygun genişlik */
+    height: auto;
+    transition: transform 0.3s; /* Büyüme animasyonu süresi */
+}
+
+.social-icons a:hover img {
+    transform: scale(1.2); /* Büyütme oranı */
 }
 
 /* media queries */
@@ -187,6 +283,10 @@ footer {
 }
 
 /* Hakkımda */
+.hidden {
+    display: none;
+}
+
 #about {
     padding: 40px 0; 
 }
@@ -249,6 +349,39 @@ footer {
 }
 
 /* Blog */
+nav {
+    display: flex;
+    align-items: center;
+}
+
+#blogCategories {
+    display: none;
+    position: absolute;
+    background-color: #939393;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.current:hover #blogCategories {
+    display: block;
+}
+
+#blogCategories li {
+    display: block;
+}
+
+ .subpages-list {
+            display: none;
+            list-style-type: none;
+            padding: 0;
+            margin: 5px 0 0 0;
+        }
+
+        .subpages-list li {
+            display: inline;
+            margin-right: 10px;
+        }
+
 .blog-post-card {
     background-color: #fff;
     border-radius: 8px;
@@ -288,6 +421,61 @@ footer {
 }
 
 /* Hizmetler */
+/* Mevcut stilinize ekleyin veya yeni bir style.css dosyası oluşturun */
+.modal2 {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+  }
+  
+  .modal2-content {
+    background-color: #f7f7f7;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    width: 80%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  .close {
+    color: #555;
+    float: right;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #333;
+  }
+  
+  textarea {
+    width: 100%;
+    height: 100px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+  }
+  button {
+    background-color: #e1b6be;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #bca4de;
+  }
+  
 .container1 {
     display: flex;
     justify-content: center; 
@@ -357,6 +545,20 @@ ul#services li {
 .rounded-services p {
     margin: 0;
 }
+
+.teklif-btn {
+    background-color: #e1b6be; 
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .teklif-btn:hover {
+    background-color: #bca4de; 
+  }
 
 /* kenar cubugu */
 aside#sidebar {

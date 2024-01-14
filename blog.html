@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="keywords" content="web design, web template, web structure">
     <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <script src="script.js"></script>
 </head>
 
 <body>
@@ -18,12 +19,19 @@
             <nav>
                 <ul>
                     <li><a href="index.html">Ana Sayfa</a></li>
-                    <li><a href="hakkimda.html">Hakkımda</a></li>
-                    <li class="current"><a href="blog.html">Blog</a></li>
+                    <li><a href="hakkimda.html">Hakkımda</a></li> 
+                    <li class="current">
+                        <a href="blog.html">Blog</a>
+                        <ul id="blogCategories">
+                            <li><a href="blogpost1.html">- Unreal Engine Güncellemesi ile Gelen Yenilikler</a></li>
+                            <li><a href="blogpost2.html">- Yapay Zekanın Gelişimi</a></li>
+                        </ul>
+                    </li>
                     <li><a href="hizmetler.html">Hizmetler</a></li>
                     <li><a href="iletisim.html">İletişim</a></li>
                 </ul>
             </nav>
+            
         </div>
     </header>
 
@@ -55,6 +63,10 @@
 
     <footer>
         <p>Hilal Cakmak, Copyright &copy; 2023</p>
+        <div class="social-icons">
+            <a href="https://github.com/hilalcakmak" target="_blank" id="github-icon"><img src="images/github.jpeg" alt="GitHub"></a>
+            <a href="https://www.instagram.com/lhilalcakmak/" target="_blank" id="instagram-icon"><img src="images/instagram.png" alt="Instagram"></a>
+        </div>
     </footer>
 </body>
 
