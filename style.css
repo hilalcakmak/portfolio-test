@@ -236,13 +236,13 @@ footer {
 }
 
 .social-icons img {
-    width: 30px; /* İkona uygun genişlik */
+    width: 30px; 
     height: auto;
-    transition: transform 0.3s; /* Büyüme animasyonu süresi */
+    transition: transform 0.3s; 
 }
 
 .social-icons a:hover img {
-    transform: scale(1.2); /* Büyütme oranı */
+    transform: scale(1.2); 
 }
 
 /* media queries */
